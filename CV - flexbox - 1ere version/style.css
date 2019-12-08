@@ -1,0 +1,110 @@
+@font-face
+{
+    font-family: 'polices/Square', Comic sans Ms, Arial;
+    src: url('polices/Square.eot') format('eot'),
+         url('polices/Square.woff') format('woff'),
+         url('polices/Square.ttf') format('truetype'),
+         url('polices/Square.svg') format('svg');
+}
+
+body
+{
+    margin:0;
+    padding:0;
+    background: url('photos/fond2.jpg') no-repeat center fixed; 
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+    
+}
+
+h2 /*titre h2 en rouge*/
+{
+    color: red;
+    font-family: Comic sans MS;
+    text-shadow: 2px 2px 4px black;
+}
+
+h1 /*titre h1 en blue*/
+{
+    color: blue;
+    text-shadow: 4px 4px 4px black;
+    font-family: 'polices/Square';
+}
+
+#top_photo /*flexbox de l'en-tete*/
+{
+    margin-left:5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 200%;
+}
+
+#conteneurs /*flexbox du corp du site*/
+{
+    margin-left:5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    font-family: Comic sans Ms;
+    text-align: justify;
+    
+}
+
+a:visited
+{
+    color: blue;
+}
+
+#reseau
+{
+    margin-left:5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    font-family: Comic sans Ms;
+    font-size: 150%;
+}
+
+@media screen and (max-width: 1024px)
+{
+
+    body
+{
+    margin:0;
+    padding:0;
+    background: url('photos/fond2.jpg') no-repeat center fixed; 
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+    
+}
+
+    #top_photo /*flexbox de l'en-tete*/
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+    font-size: 200%;
+}  
+
+    #conteneurs /*flexbox du corp du site*/
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    font-family: Comic sans Ms;
+}
+
+    #reseau
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    font-family: Comic sans Ms;
+    font-size: 150%;
+}
+}

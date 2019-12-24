@@ -1,0 +1,125 @@
+@font-face
+{
+    font-family: Arial;
+}
+
+body
+{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding:0;     
+}
+
+h2 /*titre h2 en rouge*/
+{
+    color: red;    
+    text-shadow: 2px 2px 4px black;
+}
+
+h1 /*titre h1 en blue*/
+{
+    color: whitesmoke;
+    text-shadow: 4px 4px 4px black;
+}
+
+#conteneur
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;     
+}
+
+header/*flexbox de l'entete*/
+{
+    background-color: rgb(58, 58, 58);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 150%;
+    height: 300px;
+}
+
+section /*flexbox du corp*/
+{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    font-family: Arial;
+    text-align: justify-all;
+    font-size: 105%;
+    height: 400px;
+    
+}
+
+footer /*flexbox du pied*/
+{
+    background-color: rgb(58, 58, 58);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    font-family: Arial;
+    color: white;
+    font-size: 130%;
+    height: 200px;
+}
+
+link
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+a:visited
+{
+    color: white;
+}
+
+
+@media screen and (max-width: 1024px)
+{
+body
+{
+    margin-left: 0;
+    margin-right: 0;
+    padding:0;
+}
+
+header/*flexbox de l'en-tete*/
+{
+    background-color: rgb(58, 58, 58);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    height: auto;
+}
+
+section /*flexbox du corp du site*/
+{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    font-family: Arial;
+    text-align: justify-all;
+    font-size: 120%;
+    height: auto;
+    
+}
+
+footer
+{
+    background-color: rgb(58, 58, 58);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; 
+    text-align: center;
+    height: auto;
+}
+
+}
